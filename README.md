@@ -1,19 +1,8 @@
 # Condensed Movies Challenge 
 
-The official code repository for the 2021 Condensed Movies Challenge, held at the 4th Workshop on Closing the Loop Between Vision and Language, held in conjunction with ICCV 2021. This repository contains the code and details for the data download, baseline model, and evaluation.
+This repository contains the code and details for the data download, baseline model, and evaluation for Condensed Movie Challenge. Official Repository is present at 
+https://github.com/m-bain/CondensedMovies 
 
-## Dataset Download
-
-To participate in the challenge, you must first download the new **Challenge version of the Condensed Movies dataset.** Use the following instructions to download the challenge version of the Condensed Movies dataset:
-
-1) Clone this repository.
-
-2)  **Download and unpack the dataset** (xGB). First, you can optionally choose where to download the features to (otherwise its downloaded to `./data`). To do this:
-    - [Optional] Set environment variable `export DATA_DIR="PATH_WHERE_YOU_WANT_TO_STORE_DATA"`
-    - Download the dataset (see [here](https://www.robots.ox.ac.uk/~vgg/research/condensed-movies/challenge.html "here")), unpack the tar.gz
-    - [Optional] If you set custom DATA_DIR, set up a symlink so it maps to ./data: `cd data; ln -s $DATA_DIR/CondensedMovies .; cd ..` 
-
-3) **OPTIONAL:** For additional dataset queries, please contact maxbain@robots.ox.ac.uk
 
 ## Dataset Overview
 
@@ -103,11 +92,5 @@ Evaluate on val set `python test.py --resume exps/models/{EXP_NAME}/{TIMESTAMP}/
 Evaluate on test set `python test.py --resume exps/models/{EXP_NAME}/{TIMESTAMP}/model_best.pth --split test`
 
 Similarity matrix should be zipped at `exps/models/{EXP_NAME}/{TIMESTAMP}/submission.zip`.
-Please upload this to codalab for your submission.
 
 
-
-
-
-
- 
